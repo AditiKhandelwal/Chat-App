@@ -22,6 +22,8 @@ body {
 
 h1 {
     margin-bottom: 16px;
+    text-align: center;
+    color: #6b47b8;
 }
 
 label {
@@ -32,7 +34,7 @@ label {
 }
 
 input {
-    border: 1px solid #eeeeee;
+    border: 1px solid #6b47b8;
     padding: 12px;
     outline: none;
 }
@@ -57,21 +59,28 @@ button:disabled {
 }
 
 /* Join Page Styles */
-
+ /*
 .centered-form {
-    background: #333744;
+   background: #333744; 
+    background-image: url('/img/bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;   
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:left;
+    align-items:center;
 }
-
+*/
 .centered-form__box {
     box-shadow: 0px 0px 17px 1px #1D1F26;
     background: #F7F7FA;
-    padding: 24px;
-    width: 250px;
+    padding: 84px;
+    width: 500px;
+    height: 500px;
+    margin-left: 10vw;
 }
 
 .centered-form button {
@@ -93,7 +102,7 @@ button:disabled {
     height: 100vh;
     color: white;
     background: #333744;
-    width: 225px;
+    width: 355px;
     overflow-y: scroll
 }
 
@@ -172,12 +181,43 @@ button:disabled {
 .list-title {
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 4px;
-    padding: 12px 24px 0 24px;
+    margin-bottom: 10px;
+    padding: 12px 24px 12px 24px;
+    box-shadow: 1px 1px 17px 1px #1D1F26;
 }
 
 .users {
     list-style-type: none;
     font-weight: 300;
-    padding: 12px 24px 0 24px;
+    padding: 12px 24px 0px 24px;
 }
+
+@media (min-width: 1200px) {
+    .centered-form {
+        /* background: #333744; */
+         background-image: url('/img/bg.png');
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 100vw;
+         height: 100vh;   
+         display: flex;
+         justify-content:left;
+         align-items:center;
+     } 
+}
+
+@media (max-width: 1199.98px) { 
+    .centered-form {
+        /* background: #333744; */
+         background-color: rgb(140,82,255);
+         width: 100vw;
+         height: 100vh;   
+         display: flex;
+         justify-content:center;
+         align-items:center;
+     } 
+
+    
+ }
